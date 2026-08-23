@@ -67,7 +67,7 @@ function FIP({ note, fact, insight, proposal, quote }) {
 
 // 가격 · 숫자만 든 칸은 줄바꿈하지 않는다
 const isNumericCell = (v) =>
-  typeof v === 'string' && /^[\d,.\s]+(원|개|%|만 원)?$/.test(v.replace(/\*\*/g, '').trim())
+  typeof v === 'string' && /^[\d,.\s~]+(원|개|%|만 원)?$/.test(v.replace(/\*\*/g, '').trim())
 
 function Table({ columns, rows }) {
   const indexed = columns[0] === '#'
