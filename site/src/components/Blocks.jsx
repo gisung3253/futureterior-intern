@@ -97,9 +97,9 @@ function Table({ columns, rows }) {
   )
 }
 
-function Summary({ items }) {
+function Summary({ items, labelWidth }) {
   return (
-    <div className="summary">
+    <div className="summary" style={labelWidth ? { '--summary-label-w': labelWidth } : undefined}>
       {items.map((it, i) => (
         <div className="summary-row" key={i}>
           <span className="summary-label">{it.label}</span>

@@ -405,7 +405,7 @@ td:first-child {
 }
 .summary-row {
   display: grid;
-  grid-template-columns: 72px 1fr;
+  grid-template-columns: var(--summary-label-w, 72px) 1fr;
   gap: 14px;
   font-size: 15px;
 }
