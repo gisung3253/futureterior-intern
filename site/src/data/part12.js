@@ -56,7 +56,7 @@ const part12 = {
             {
               src: '/mobile-noti.jpg',
               alt: '잠금화면에 도착한 대표님(봇) 알림 — "기성씨, 이거 보세요. > 슬랙봇 다 만들어졌죠?"',
-              caption: 'slack에 올라온 글이 대표님 말투로 내 폰에 DM으로 도착',
+              caption: 'Slack에 올라온 글이 대표님 말투로 내 폰에 DM으로 도착',
               maxHeight: '560px',
             },
           ],
