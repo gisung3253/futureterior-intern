@@ -8,6 +8,7 @@ import part7 from './part7.js'
 import part8 from './part8.js'
 import part9 from './part9.js'
 import part10 from './part10.js'
+import part11 from './part11.js'
 import part12 from './part12.js'
 
 export const parts = [
@@ -21,6 +22,6 @@ export const parts = [
   { id: 8, title: '해외에서 뜨고 있는 제품 · 브랜드 발굴', group: '브랜드 · 상품 · 시장', content: part8 },
   { id: 9, title: 'Desk Setup Market Map', group: '브랜드 · 상품 · 시장', content: part9 },
   { id: 10, title: 'Future Deal 기획', group: '브랜드 · 상품 · 시장', content: part10 },
-  { id: 11, title: "AI를 활용한 '1인 3인분' 업무 시스템", group: 'AI · 도구' },
+  { id: 11, title: "AI를 활용한 '1인 3인분' 업무 시스템", group: 'AI · 도구', content: part11 },
   { id: 12, title: 'Slack Bot Prototype', group: 'AI · 도구', content: part12 },
 ]
