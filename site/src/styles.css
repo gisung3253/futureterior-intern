@@ -1531,3 +1531,68 @@ td:first-child {
 .fip-figures .figures {
   margin: 0;
 }
+
+/* ── 프로필 카드의 채널 사진 (클릭 시 채널로 이동) ── */
+
+.profile-photo {
+  display: block;
+  margin: 14px 0 4px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+.profile-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+a.profile-photo {
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+}
+
+a.profile-photo:hover {
+  opacity: 0.92;
+  border-color: var(--ink-3);
+}
+
+.profile-name-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink-4);
+}
+
+.profile-name-link:hover {
+  border-bottom-color: var(--ink);
+}
+
+.profile-ext {
+  font-size: 12px;
+  color: var(--ink-3);
+}
+
+/* 프로필 카드 머리의 플랫폼 아이콘 링크 */
+.profile-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  opacity: 0.85;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.profile-links a:hover {
+  opacity: 1;
+  transform: scale(1.12);
+}

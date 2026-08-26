@@ -11,7 +11,7 @@ const part3 = {
         {
           type: 'fip',
           insight:
-            '데스크 셋업은 구독해서 챙겨 보는 콘텐츠가 아니라 **사기 직전에 검색해서 보는 콘텐츠**입니다. \n그래서 구독자가 많은 사람보다 검색과 추천으로 퍼지는 사람, 그리고 물건을 팔아 본 사람이 매출을 만듭니다.',
+            '데스크 셋업은 구독해서 챙겨 보는 콘텐츠가 아니라 **사기 직전에 검색해서 보는 콘텐츠**입니다. \n그래서 구독자가 많은 사람보다 검색과 추천으로 퍼지는 사람, 그리고 물건을 팔아 본 사람을 위주로 골랐습니다.',
         },
       ],
     },
@@ -38,6 +38,7 @@ const part3 = {
           type: 'profile',
           name: '자취남',
           meta: '유튜브 100만',
+          links: [{ kind: 'youtube', url: 'https://www.youtube.com/channel/UCtYHCl8yhhvpWfcvdA_sCVg' }],
           rows: [
             ['주요 콘텐츠', '1인 가구의 집을 찾아가는 방문 룸투어. 거의 매일 올라옵니다.'],
             ['주요 시청자', '원룸 · 오피스텔에 사는 20~30대. 남의 집을 보며 자기 집을 어떻게 바꿀지 계산하는 사람들.'],
@@ -49,6 +50,7 @@ const part3 = {
           type: 'profile',
           name: 'ggyonghouse',
           meta: '유튜브 45.8만',
+          links: [{ kind: 'youtube', url: 'https://www.youtube.com/@ggyonghouse' }],
           rows: [
             ['주요 콘텐츠', '월세집을 직접 뜯어고치는 셀프 시공 시리즈.'],
             ['주요 시청자', '남의 손을 빌리지 않고 자기 공간을 직접 바꾸는 사람. 도구와 자재를 직접 사는 층.'],
@@ -60,6 +62,7 @@ const part3 = {
           type: 'profile',
           name: '에이트 ATE',
           meta: '유튜브 38.3만',
+          links: [{ kind: 'youtube', url: 'https://www.youtube.com/channel/UChujA7UWSFYp-ytM0n-ODoA' }],
           rows: [
             ['주요 콘텐츠', '유용한 아이템 · 신박한 기기 추천. 업로드가 잦고 조회수 편차가 큽니다.'],
             ['주요 시청자', '실용적인 물건을 찾아보는 20~40대. 구매 직전에 검색으로 들어오는 비중이 큽니다.'],
@@ -71,6 +74,7 @@ const part3 = {
           type: 'profile',
           name: '지호 jihofilm',
           meta: '유튜브 21.4만',
+          links: [{ kind: 'youtube', url: 'https://www.youtube.com/@jihofilm' }],
           rows: [
             ['주요 콘텐츠', '오피스텔 룸투어와 홈테리어 브이로그. 이사 · 집꾸미기 과정을 감성적으로 담습니다.'],
             ['주요 시청자', '자취 중인 20~30대 여성. 기능보다 분위기와 색감으로 물건을 고르는 층.'],
@@ -82,6 +86,7 @@ const part3 = {
           type: 'profile',
           name: '오늘의 데스크',
           meta: '유튜브 18.5만 · 인스타 14.1만',
+          links: [{ kind: 'youtube', url: 'https://www.youtube.com/@OHDESK' }, { kind: 'instagram', url: 'https://www.instagram.com/oh_desk/' }],
           rows: [
             ['주요 콘텐츠', '방구석 책상 꾸미기, 정리수납.'],
             ['주요 시청자', '좁은 공간에서 실용적으로 책상을 쓰려는 사람. 감성보다 정리와 효율을 먼저 보는 층.'],
@@ -93,6 +98,7 @@ const part3 = {
           type: 'profile',
           name: '안미르 Annmir',
           meta: '유튜브 17.2만',
+          links: [{ kind: 'youtube', url: 'https://www.youtube.com/@Annmir_channel' }],
           rows: [
             ['주요 콘텐츠', '집순이 게임 일상 · 언박싱 · 제품 리뷰.'],
             ['주요 시청자', '작은 방에서 게임과 휴식을 함께 하는 20대 여성 자취인.'],
@@ -104,6 +110,7 @@ const part3 = {
           type: 'profile',
           name: '소리홈',
           meta: '인스타 4.7만',
+          links: [{ kind: 'instagram', url: 'https://www.instagram.com/sori__home/' }],
           rows: [
             ['주요 콘텐츠', '데스크테리어 · 집꾸미기 · DIY 사진과 릴스.'],
             ['주요 시청자', '인테리어 정보를 사진으로 소비하는 20~30대. 저장해 뒀다 나중에 사는 층.'],
@@ -115,6 +122,7 @@ const part3 = {
           type: 'profile',
           name: '드보키 DBOKEY',
           meta: '유튜브 21.2만',
+          links: [{ kind: 'youtube', url: 'https://www.youtube.com/@DBOKEY' }],
           rows: [
             ['주요 콘텐츠', '커스텀 키보드 전문.'],
             ['주요 시청자', '영상은 커스텀 키보드 애호가, 쇼츠는 키보드를 처음 고르는 일반 사용자까지 넓게 들어옵니다.'],
@@ -126,6 +134,7 @@ const part3 = {
           type: 'profile',
           name: '겜용이',
           meta: '유튜브 15.2만',
+          links: [{ kind: 'youtube', url: 'https://www.youtube.com/channel/UCtzYIHUlZbT1d4v3U-uIyEQ' }],
           rows: [
             ['주요 콘텐츠', '전 프로게이머의 게이밍 기어 · 모니터 리뷰.'],
             ['주요 시청자', '장비를 스펙으로 고르는 20~30대 게이머.'],
@@ -137,6 +146,7 @@ const part3 = {
           type: 'profile',
           name: '승업키보드',
           meta: '유튜브 13.6만',
+          links: [{ kind: 'youtube', url: 'https://www.youtube.com/@seungupkbd' }],
           rows: [
             ['주요 콘텐츠', '키보드 · 마우스 · 게이밍 기어 리뷰를 거의 매일 올리는 채널.'],
             ['주요 시청자', '"이 키보드 살까" 하고 검색해 들어오는 사람. 구독보다 검색 유입이 큰 구조.'],

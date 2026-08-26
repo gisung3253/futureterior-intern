@@ -206,13 +206,40 @@ function Callout({ text }) {
   );
 }
 
-function Profile({ index, name, meta, rows, note }) {
+/* 플랫폼 아이콘 (유튜브 · 인스타그램) */
+function PlatformIcon({ kind }) {
+  if (kind === "youtube")
+    return (
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-label="YouTube">
+        <rect x="1.5" y="4.5" width="21" height="15" rx="4" fill="#FF0000" />
+        <polygon points="10,9 16,12 10,15" fill="#fff" />
+      </svg>
+    );
+  return (
+    <svg viewBox="0 0 24 24" width="19" height="19" aria-label="Instagram">
+      <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="#E4405F" strokeWidth="2" />
+      <circle cx="12" cy="12" r="4.5" fill="none" stroke="#E4405F" strokeWidth="2" />
+      <circle cx="17.4" cy="6.6" r="1.4" fill="#E4405F" />
+    </svg>
+  );
+}
+
+function Profile({ index, name, meta, rows, note, links }) {
   return (
     <div className="profile">
       <div className="profile-head">
         <span className="profile-index">{String(index).padStart(2, "0")}</span>
         <h4 className="profile-name">{name}</h4>
         {meta && <span className="profile-meta">{meta}</span>}
+        {links && links.length > 0 && (
+          <span className="profile-links">
+            {links.map((l, i) => (
+              <a key={i} href={l.url} target="_blank" rel="noreferrer" title={`${name} ${l.kind === "youtube" ? "유튜브" : "인스타그램"} 열기`}>
+                <PlatformIcon kind={l.kind} />
+              </a>
+            ))}
+          </span>
+        )}
       </div>
       <dl className="profile-body">
         {rows.map(([k, v], i) => (
