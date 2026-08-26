@@ -935,6 +935,10 @@ td:first-child {
   flex: 1 1 0;
   min-width: 0;
 }
+.figure {
+  display: flex;
+  flex-direction: column;
+}
 .figure-img {
   background: var(--paper-2);
   border: 1px solid var(--line);
@@ -943,7 +947,7 @@ td:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  flex: 1 1 auto;
   min-height: 120px;
 }
 .figure-img img {
@@ -1517,4 +1521,13 @@ td:first-child {
   background: none;
   border: 0;
   padding: 0;
+}
+
+/* fip 안 Fact-Insight 사이의 증거 사진 — 라벨 들여쓰기 없이 전체 폭 */
+.fip-figures {
+  margin: 6px 0 18px;
+}
+
+.fip-figures .figures {
+  margin: 0;
 }

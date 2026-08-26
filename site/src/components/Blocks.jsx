@@ -32,7 +32,7 @@ function Quote({ text, source }) {
 }
 
 /* Fact → Insight → Proposal */
-function FIP({ note, fact, insight, proposal, quote }) {
+function FIP({ note, fact, insight, proposal, quote, figures }) {
   return (
     <div className="fip">
       {note && <p className="fip-note">{note}</p>}
@@ -43,6 +43,11 @@ function FIP({ note, fact, insight, proposal, quote }) {
             <List items={fact} />
             {quote && <Quote {...quote} />}
           </div>
+        </div>
+      )}
+      {figures && (
+        <div className="fip-figures">
+          <Figures {...figures} />
         </div>
       )}
       {insight && (
